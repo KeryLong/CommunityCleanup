@@ -1,0 +1,13 @@
+body{
+    background-color: #AED1FF;
+    color:#153f2c;
+}
+h1{
+    font-family: raleway, oswald, serif;
+    font-weight: 600;
+}
+
+#navbarBrand{
+    background-color: #153f2c;
+    color: #AED1FF;
+}
