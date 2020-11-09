@@ -1,0 +1,106 @@
+#container{
+    width: 800px;
+    margin: 0 auto;
+}
+.formHead{
+    text-align: center;
+}
+/*--------Form Style----*/
+form{
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 8px   #79534d; 
+}
+form fieldset{
+    padding: 40px;
+    border-top: solid 2px rgb(128, 35, 35);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+form input , form select,form textarea {
+    display: block;
+    margin-bottom: 20px;
+    
+}
+form label{
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #79534d;
+}
+
+form input[type=text], form input[type=date], form input[type=time] ,form select, form input[type=phone], form input[type=email] {
+   /* width: 100%; */
+    width: 300px;
+    padding: 6px; 
+    border: 1px solid  #79534d;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    border-radius: 0px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+    font-size: 20;
+    
+    
+  }
+  form textarea{
+    width: 700px;
+    height: 100px;
+    border: 1px solid  #79534d;
+    border-radius: 0px; 
+    box-sizing: border-box;  
+    resize: vertical ;
+    font-size: 20;
+    
+  }
+
+ /*------ Botton Style---*/
+ input[type=submit] {
+    background-color: #79534d;
+    height: 40;
+    width: 20;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    font-size: medium;
+    
+  }
+  input[type=submit]:hover {
+    background-color: #be9a95;
+  }
+
+/*--------- flex box design----*/
+  .form-row{
+   /* border: 1px gray solid;*/
+    display: flex;
+    justify-content: center;
+   flex-direction: row;
+  
+  }
+  .form-container {
+      padding: 20px;
+      width: 400;
+      height: 300;
+      /*border: grey 1px solid;*/
+  }
+  #first-column{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #second-column
+  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     
+  }

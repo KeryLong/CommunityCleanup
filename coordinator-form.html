@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coordinator Registration Form</title>
+        <link rel="stylesheet" href="coordinator-form.css"> 
+    </head>
+    <body>
+     <div id = "container">
+        <form>
+            <h1 class="formHead"  >Coordinator Registration Form</h1>
+        <fieldset>
+            <legend >Communit Information</legend>
+            <div class="form-row"> 
+                <div class="form-container" id="first-column">
+                   
+                
+                        <label for ="communityName">Community Name</label>
+                        <input type="text" id="communityName" >
+
+                        <label for="city">City</label>
+                        <input id ="city" type="text">
+                <br><br><br><br>
+                        <label>Date</label>
+                        <input type ="date">
+              
+                    </div>
+            
+               
+                <div class="form-container" id="second-column">
+                    <label for="adress">Address ( Meeting Place)</label>            
+                    <input  id="adress" type="text">
+
+            <label>Province</label>
+            <select >
+              <option> Alberta</option> 
+              <option> British Columbia</option> 
+              <option> Manitoba</option>
+             <option> New Brunswick</option>
+             <option>Newfoundland and Labrador</option>
+             <option>Nova Scotia</option>
+             <option>Ontario</option>
+             <option>Prince Edward Island</option>
+             <option>Quebec</option>
+             <option>Saskatchewan</option>
+           </select>
+
+           <label>Postal Code</label>
+           <input type="text">
+
+           <label>Time</label>
+           <input type ="time" placeholder="Time">
+ 
+        </div>
+    </div>
+     </fieldset>
+
+     <fieldset>
+        <legend >Coordinator Information</legend>
+        <div class="form-row"> 
+            <div class="form-container" id="first-column">
+            
+                    <label for ="coordinatorFirstName">First Name</label>
+                    <input type="text" id="coordinatorFirstName" >
+
+                    <label for ="phoneNumber" >Phone Number</label>
+                    <input type="phone" id="phoneNumber">
+                   
+                </div>
+        
+           
+            <div class="form-container" id="second-column">
+                <label for ="coordinatorLastName">Last Name</label>
+                <input type="text" id="coordinatorLastName" >
+
+                <label for ="Email" >Email</label>
+                <input type="email" id="Email"> 
+
+            </div>
+        </div>
+     </fieldset>
+    <fieldset style="border: none;">
+        <label for ="note"> Note</label>
+        <textarea placeholder="Type your Notes here" id="note"></textarea>
+        
+        <input type="submit" value="Register"> 
+    </fieldset>
+               </form>
+               
+</div>
+    </body>
+</html>
+
+
+
