@@ -1,2 +1,2 @@
 # CommunityCleanup
-EvolveU project 2 with Rajaa, Kery and Ken
+EvolveU project 2 with Rajaa, Kery and Ken J
