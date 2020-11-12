@@ -1,0 +1,101 @@
+body{
+    background: radial-gradient(circle, rgba(122,244,171,1) 0%, rgba(74,140,103,1) 50%, rgba(78,164,112,1) 100%);
+    color:#153f2c;
+}
+h1{
+    display:flex;
+    text-align: center;    
+    font-family: oswald, serif;
+    font-weight: 700;
+    margin:0.7em;
+}
+h2{
+    display: flex;
+    font-family: Oswald, serif;
+    font-size: 2.25em;
+    font-weight:500;
+    margin-left: 1.3em;
+    
+}
+p{
+    font-family: raleway;
+    font-size:1.5em;
+    margin-left: 2em;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    width:8em;
+    height: 2.5em
+}
+/*----------------------placeholderstyle--------------------*/
+.placeholder{
+    color:rgb(121, 10, 10);
+}
+
+.container{
+    width:65%;
+    display:flex;
+    margin: 2em;
+}
+
+
+
+#volunteerSignup{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#homeOpening{
+    display: flex;
+    flex-direction: row;
+    justify-content: centerspace-between;
+    margin: 2em;
+}
+#volunteerImg{
+    display: flex;
+    max-width: 200px;
+    
+   
+}
+
+#homeOpeningParagraph{
+    display: flex;
+    max-width:50%;
+    margin-left: 5em;
+}
+
+#cleanupInfo{
+    margin: 1em;
+}
+
+
+
+
+ 
+
+.VolunteerHeader, .donorHeader {
+    /* display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    }
+
+    .VolunteerParagraph, .donorParagraph {
+        /* display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    }
+
+    /* .volunteerButton, .donorButton{
+         width:65%;
+        display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    } */
+
