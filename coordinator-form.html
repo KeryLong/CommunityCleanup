@@ -5,11 +5,11 @@
         <link rel="stylesheet" href="coordinator-form.css"> 
     </head>
     <body>
-     <div id = "container">
+     <div id = "container"> 
         <form>
             <h1 class="formHead"  >Coordinator Registration Form</h1>
         <fieldset>
-            <legend >Communit Information</legend>
+            <legend >Community Information</legend>
             <div class="form-row"> 
                 <div class="form-container" id="first-column">
                    
@@ -78,8 +78,12 @@
             </div>
         </div>
      </fieldset>
-    <fieldset style="border: none;">
+    <fieldset>
+        <legend >Notes And Requests</legend>
         <label for ="note"> Note</label>
+        <textarea placeholder="Type your Notes here" id="note"></textarea>
+
+        <label for ="note"> Requests</label>
         <textarea placeholder="Type your Notes here" id="note"></textarea>
         
         <input type="submit" value="Register"> 
