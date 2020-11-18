@@ -29,6 +29,13 @@ button{
     width:8em;
     height: 2.5em
 }
+input{
+    background-color: #153f2c;
+    {display: block;}
+}
+/* .bi bi-person-plus-fill{
+    margin-left:2px;
+} */
 /*----------------------placeholderstyle--------------------*/
 .placeholder{
     color:rgb(121, 10, 10);
@@ -86,4 +93,8 @@ button{
     #groupMembersAdd{
         display: flex;
         flex-direction: row;
+    }
+
+    .additionalTeamMembers{
+        display: none;
     }

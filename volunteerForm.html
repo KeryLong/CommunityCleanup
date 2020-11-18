@@ -55,19 +55,17 @@
 
       <div id="form">
         <label for ="teamName">Team Name:
-          <input type="text" placeholder="Team Name" id="firstName" name="teamName"required>
+          <input type="text" placeholder="Team Name" id="teamName" name="teamName" required>
         </label><br>
-        <div class="container" id="groupMembersAdd"></div>
-          <label for="moreMembers">How many team members do you have?
-            <input type="Num" id="moreMembers" placeholder="eg. 3" name="MoreMembers"></input>
+        
             </label></div>
     
-          <h3>Primary team contact</h3>
+          <h3>Team Members</h3>
         <label for ="firstName">First Name:
-          <input type="text" placeholder="first Name" id="firstName" name="fprimaryFirstName"required>
+          <input type="text" placeholder="first Name" id="firstName" name="fprimaryFirstName" required>
         </label><br>
         <label for ="LastName">Last Name:
-            <input type="text" placeholder="Last Name" id="LastName" name="primaryLastName"required>
+            <input type="text" placeholder="Last Name" id="lastName" name="primaryLastName" required>
         </label>
       
         <br>
@@ -81,13 +79,16 @@
       <label for ="email">Email:
         <input type="email" placeholder="email address" name="email" id="email" required>
       </label>
-      
-      <!-- <div class="container" id="additionalTeamMembers"></div>
-      <label for ="additionalFirstName">
-      <input type="text" class="additionalFirstName" name="additionalFirstName"></label> -->
-      <button id="addMoreTeamButton"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <hr>
+      <!-- THIS DIV IS WHERE i'M TRYING TO APPEND TEXT INPUTS -->
+      <div class="container additionalTeamMembers" id="addTeamMemberDiv"></div>
+
+      <button id="addMoreTeamButton" onclick="addTeamMembers()">Add Team Member <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
       </svg></button>
+      
+      
+      
       
       
 
