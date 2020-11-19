@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>Coordinator Registration Form</title>
-        <link rel="stylesheet" href="coordinator-form.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;600;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="coordinator-form.css">
+        <script src="functions.js"></script> 
     </head>
     <body>
      <div id = "container"> 
@@ -12,16 +14,14 @@
             <legend >Community Information</legend>
             <div class="form-row"> 
                 <div class="form-container" id="first-column">
-                   
-                
                         <label for ="communityName">Community Name</label>
                         <input type="text" id="communityName" >
 
                         <label for="city">City</label>
                         <input id ="city" type="text">
-                <br><br><br><br>
+                <br><br><br>
                         <label>Date</label>
-                        <input type ="date">
+                        <input id="date" type ="date">
               
                     </div>
             
@@ -45,10 +45,10 @@
            </select>
 
            <label>Postal Code</label>
-           <input type="text">
+           <input id="postcode" type="text">
 
            <label>Time</label>
-           <input type ="time" placeholder="Time">
+           <input id = "time" type ="time" placeholder="Time">
  
         </div>
     </div>
@@ -64,17 +64,16 @@
 
                     <label for ="phoneNumber" >Phone Number</label>
                     <input type="phone" id="phoneNumber">
-                   
                 </div>
-        
-           
+            
             <div class="form-container" id="second-column">
                 <label for ="coordinatorLastName">Last Name</label>
                 <input type="text" id="coordinatorLastName" >
 
                 <label for ="Email" >Email</label>
                 <input type="email" id="Email"> 
-
+                <div id="newField"></div>
+                <button class="button" onclick="addFieldFirstname()"> Add Person</button>
             </div>
         </div>
      </fieldset>
