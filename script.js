@@ -3,7 +3,7 @@
 function addTeamMembers(){
   let appendDiv = document.getElementById("addTeamMemberDiv");
   let textNode=document.createTextNode('ihkjhkjhkjhh');
-  appendDiv.appendChild('text')
+  appendDiv.appendChild('ihkjhkjhkjhh')
 //   let firstName = document.createElement("input");
   
 

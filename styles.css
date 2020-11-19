@@ -96,5 +96,5 @@ input{
     }
 
     .additionalTeamMembers{
-        display: none;
+        display: flex;
     }
