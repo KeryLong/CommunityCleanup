@@ -30,7 +30,7 @@
                     <label for="adress">Address ( Meeting Place)</label>            
                     <input  id="adress" type="text">
 
-            <label>Province</label>
+            <label id = "province">Province</label>
             <select >
               <option> Alberta</option> 
               <option> British Columbia</option> 
@@ -64,6 +64,7 @@
 
                     <label for ="phoneNumber" >Phone Number</label>
                     <input type="phone" id="phoneNumber">
+                    <div id="newField1"></div>
                 </div>
             
             <div class="form-container" id="second-column">
@@ -72,8 +73,9 @@
 
                 <label for ="Email" >Email</label>
                 <input type="email" id="Email"> 
-                <div id="newField"></div>
-                <button class="button" onclick="addFieldFirstname()"> Add Person</button>
+                <div id="newField2"></div>
+                <button class="button" type="button" onclick="addFieldFirstname(), addFieldLastname()"> Add Person</button>
+               
             </div>
         </div>
      </fieldset>
@@ -85,7 +87,7 @@
         <label for ="request"> Requests</label>
         <textarea placeholder="Type your Requests here" id="request"></textarea>
         
-        <input type="submit" value="Register"> 
+        <input type="submit" value="Register" onclick="Register()"> 
     </fieldset>
                </form>
                

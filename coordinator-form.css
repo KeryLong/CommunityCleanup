@@ -2,7 +2,7 @@ body{
   /* background-image: url(17bea15a20896e09d4b72fb86d044f87.jpg);
     background-repeat: no-repeat;
     background-size: 100%; */
-   background: radial-gradient(circle, rgba(122,244,171,1) 0%, rgba(74,140,103,1) 50%, rgba(78,164,112,1) 100%); */
+   background: radial-gradient(circle, rgba(122,244,171,1) 0%, rgba(74,140,103,1) 50%, rgba(78,164,112,1) 100%); 
 }
 
 
@@ -35,7 +35,7 @@ form fieldset{
     color: rgb(12, 82, 42);
   }
 
-}
+
 form input , form select,form textarea {
     display: block;
     margin-bottom: 20px;

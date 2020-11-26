@@ -13,7 +13,7 @@
 // }
 
 function addFieldFirstname(){
-    let newFieldInput = document.getElementById("newField")
+    let newFieldInput = document.getElementById("newField1")
     let label = document.createElement("label")
     label.textContent = "First Name"
     let field = document.createElement("input")
@@ -24,7 +24,7 @@ function addFieldFirstname(){
 }
 
 function addFieldLastname(){
-    let newFieldInput = document.getElementById("newField")
+    let newFieldInput = document.getElementById("newField2")
     let label = document.createElement("label")
     label.textContent = "Last Name"
     let field = document.createElement("input")
@@ -34,16 +34,29 @@ function addFieldLastname(){
     
 }
 
+function Register(){
+    const communityname = document.getElementById('communityName')
+    const communityName = communityname.value
+    fetch ('http://localhost:3000/comunityinfo',{
+    method: 'post',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({communityName:communityName})
+ } )
+}
 
 
 
-
-
-
-
-
-
-
-// let theButton = document.getElementById(addButton)
-//     theButton.addEventListener("click", addFieldFirstname)
-//     theButton.addEventListener("click", addFieldLastname)
+// var id = 0;
+// var newinput = function() {
+//   var parent = document.body
+//   var field = document.createElement("input")
+//   field.className = "myclassname"
+//   field.style = "display:block;"
+//   field.id = "input" + id;
+//   parent.appendChild(field);
+//   id += 1;
+// }
+// <body>
+//   <div>Click plus to add input</div>
+//   <button type="button" name="button" onclick="newinput()">+</button>
+// </body>
