@@ -30,6 +30,14 @@ input{
     display: flex;
     color:#7af4ab;
 }
+
+textarea{
+    background-color: #153f2c;
+    height:20em;
+    width:15em;
+    color:#7af4ab;
+    
+}
 ::placeholder{
     color:rgb(78,164,112);
     opacity: 1;
@@ -37,14 +45,39 @@ input{
 ::-ms-input-placeholder { /* Microsoft Edge */
     color:rgb(78,164,112);
 }
+#mainBucket{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
 #addMoreTeamButton{
+    display:flex;
+    align-items: center;
     height:auto;
-    width:auto;
+    width:10em;
     background-color: #153f2c;
     color: #7af4ab;
     margin: 1em;
+    margin-top: 63%;
 }
-
+#addMoreDonationDetailsButton{
+    display:flex;
+    align-items: center;
+    height:auto;
+    width: 10em;    
+    background-color: #153f2c;
+    color: #7af4ab;
+    margin: 1em;
+    margin-top:81%;
+}
+addTeamButton{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:25%;
+}
 #mainBucket{
     display: flex;
     flex-direction: row;
@@ -73,6 +106,11 @@ input{
     max-width: 30%;
       margin-left:1em;
 }
+
+#businessForm{
+    display:flex;
+    flex-direction: column;
+}
 .newTeammateFirstName{
     margin-top:0.75em;
     margin-bottom: 0.2em;
@@ -84,4 +122,8 @@ input{
 .teamMemberContainer{
     display: flex;
     flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: row;
 }

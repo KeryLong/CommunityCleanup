@@ -15,10 +15,17 @@ function addTeamMembers() {
   lastName.setAttribute('class', 'newTeammateLastName');
   appendDiv.appendChild(lastName);
 }
-//   let firstName = document.createElement("input");
+//DONATION DETAILS ONCLICK FUNCTION
+
+function addDonationDetails() {
+  let appendDiv = document.getElementById("addDonationDetailsDiv");
+  let details = document.createElement("textarea");
   
 
-//   firstName.setAttribute('type', 'text');
 
-//   appendDiv.appendChild(firstName);
-//   document.getElementsByTagName("input").placeholder = "Team member first name";
+  
+  details.setAttribute('placeholder', 'Add additional details here. ');
+  
+  appendDiv.appendChild(details);
+
+}
