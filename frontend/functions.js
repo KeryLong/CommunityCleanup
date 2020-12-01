@@ -28,16 +28,19 @@ function loadpage(){
     loadCommunity()
 }
 
-
 function loadCommunity(){
-    const newcommunityname= document.getElementById('communityNameHeader')  ///get elemnt by id from the signupStat.html//
-    fetch ('http://localhost:3000/communityinfo')
-    .then(response => response.json())
-    // .then (communityinfo => console.log(communityinfo))
-    .then (communityinfo => newcommunityname.textContent = JSON.stringify(communityinfo))
-    console.log(newcommunityname)
-}
+        const newcommunityname= document.getElementById('communityNameHeader')  ///get elemnt by id from the signupStat.html//
+        fetch ('http://localhost:3000/communityinfo')
+        .then(response => response.json())
+        .then (communityinfo =>loadDataOntoPage(communityinfo))
+    }
 
+function loadDataOntoPage(communityInfo){
+    const communityname= document.getElementById('communityNameHeader')
+    communityInfo.forEach (community => {
+    communityname.textContent = community.communityName
+    })
+}
 
 ////////////  Post Community Iformation to the Server //////////
 function Register(){
@@ -63,11 +66,12 @@ function Register(){
 }
 
 
-// function loadDataOntoPage(){
-//     const communityname= document.getElementById('communityNamePara')
-//     fetch ('http://localhost:3000/communityinfo')
-//     communityInfo.map(function(community){
-//     communityname.textContent = community.communityName
-//     })
-// }
 
+// function loadCommunity(){
+//     const newcommunityname= document.getElementById('communityNameHeader')  ///get elemnt by id from the signupStat.html//
+//     fetch ('http://localhost:3000/communityinfo')
+//     .then(response => response.json())
+//     // .then (communityinfo => console.log(communityinfo))
+//     .then (communityinfo => newcommunityname.textContent = JSON.stringify(communityinfo))
+//     console.log(newcommunityname)
+// }
