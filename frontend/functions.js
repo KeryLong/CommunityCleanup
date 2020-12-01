@@ -1,17 +1,5 @@
 
-// let addnewperson = 1
-
-// function addNewPerson(){
-//     if (addnewperson < 2){
-//         addFieldFirstname()
-//         addFieldLastname() 
-//     }
-//     else{
-//         console.log("you can not add more")
-//         alert("you can not add more")
-//     }
-// }
-
+////////////// Add New Coordinator Functions  ////////
 function addFieldFirstname(){
     let newFieldInput = document.getElementById("newField1")
     let label = document.createElement("label")
@@ -34,29 +22,52 @@ function addFieldLastname(){
     
 }
 
-function Register(){
-    const communityname = document.getElementById('communityName')
-    const communityName = communityname.value
-    fetch ('http://localhost:3000/comunityinfo',{
-    method: 'post',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({communityName:communityName})
- } )
+// request data from server  ///
+
+function loadpage(){
+    loadCommunity()
 }
 
 
+function loadCommunity(){
+    const newcommunityname= document.getElementById('communityNameHeader')  ///get elemnt by id from the signupStat.html//
+    fetch ('http://localhost:3000/communityinfo')
+    .then(response => response.json())
+    // .then (communityinfo => console.log(communityinfo))
+    .then (communityinfo => newcommunityname.textContent = JSON.stringify(communityinfo))
+    console.log(newcommunityname)
+}
 
-// var id = 0;
-// var newinput = function() {
-//   var parent = document.body
-//   var field = document.createElement("input")
-//   field.className = "myclassname"
-//   field.style = "display:block;"
-//   field.id = "input" + id;
-//   parent.appendChild(field);
-//   id += 1;
+
+////////////  Post Community Iformation to the Server //////////
+function Register(){
+    const communityname = document.getElementById('communityName')
+    const communityName = communityname.value
+    const Address = document.getElementById('address')
+    const address = Address.value
+    const City = document.getElementById('city')
+    const city = City.value
+    const Province = document.getElementById('province')
+    const province = Province.value
+    const Postcode = document.getElementById('postcode')
+    const postcode = Postcode.value
+    const Date = document.getElementById('date')
+    const date = Date.value
+    const Time = document.getElementById('time')
+    const time = Time.value
+    fetch ('http://localhost:3000/communityinfo',{
+    method: 'post',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({communityName:communityName, city:city, address:address,province:province, postcode:postcode, date:date, time:time })
+ })
+}
+
+
+// function loadDataOntoPage(){
+//     const communityname= document.getElementById('communityNamePara')
+//     fetch ('http://localhost:3000/communityinfo')
+//     communityInfo.map(function(community){
+//     communityname.textContent = community.communityName
+//     })
 // }
-// <body>
-//   <div>Click plus to add input</div>
-//   <button type="button" name="button" onclick="newinput()">+</button>
-// </body>
+

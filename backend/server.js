@@ -8,27 +8,46 @@ app.use(cors())
 app.use(express.static('.'))
 
 const communityInfo = [
-    {"comunityName" : "Test Comunity name",
-    "address": "Test Adress",
+    {"communityName" : "community1",
+    "address": "1254 community way NW",
     "city": "Calgary",
     "province":"AB",
-    "postcode": "T3G 2C4",
-    "date":"here is the date",
-    "time":"here is the time",
+    "postcode": "T3G",
+    "date":"Jun 1",
+    "time":"9 am",
+     },
+
+     {"communityName" : "community2",
+    "address": "2020 community SW",
+    "city": "Calgary",
+    "province":"AB",
+    "postcode": "T3G",
+    "date":"Jun 1",
+    "time":"9 am",
      }
 ]
 //PORT
-app.listen (3000,function(){
-    console.log(" server Started on port 3000")
+var server = app.listen (3000,function(){
+    var port = server.address().port
+    console.log('server Started on', port )
 })
 
-app.get('/comunityinfo', function(req,res){
+app.get('/communityinfo', function(req,res){
     res.send(communityInfo)
 })
 
-app.post('/comunityinfo',function(req,res){
-    console.log('I have a request')
+app.post('/communityinfo',function(req,res){
+    // console.log('I have a request')
     console.log(req.body)
-    // let newcommunity = req.body
-    //     communityInfo.push(newcommunity)
+    let newcommunity = {
+        comunityName:req.body.comunityName,
+        address : req.body.address,
+        city : req.body.city,
+        province : req.body.province,
+        postcode : req.body.postcode,
+        date : req.body.date,
+        time : req.body.time
+    }
+        communityInfo.push(newcommunity)
+        res.send(newcommunity)
 })
