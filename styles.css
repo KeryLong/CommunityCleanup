@@ -1,0 +1,139 @@
+body{
+    background: radial-gradient(circle, rgba(122,244,171,1) 0%, rgba(74,140,103,1) 50%, rgba(78,164,112,1) 100%);
+    color:#153f2c;
+}
+h1{
+    display:flex;
+    text-align: center;    
+    font-family: oswald, serif;
+    font-weight: 700;
+    margin:0.7em;
+}
+
+h3{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: Oswald, serif;
+    font-size: 2em;
+    font-weight:500;
+    margin-top: 1.4em;
+    margin-bottom:1em;
+    
+}
+p{
+    font-family: raleway;
+    font-size:1.5em;
+    margin-left: 2em;
+}
+input{
+    background-color: #153f2c;
+    display: flex;
+    color:#7af4ab;
+}
+
+textarea{
+    background-color: #153f2c;
+    height:20em;
+    width:15em;
+    color:#7af4ab;
+    
+}
+::placeholder{
+    color:rgb(78,164,112);
+    opacity: 1;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:rgb(78,164,112);
+}
+#mainBucket{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+#addMoreTeamButton{
+    display:flex;
+    align-items: center;
+    height:auto;
+    width:10em;
+    background-color: #153f2c;
+    color: #7af4ab;
+    margin: 1em;
+    margin-top: 63%;
+}
+#addMoreDonationDetailsButton{
+    display:flex;
+    align-items: center;
+    height:auto;
+    width: 10em;    
+    background-color: #153f2c;
+    color: #7af4ab;
+    margin: 1em;
+    margin-top:81%;
+}
+addTeamButton{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:25%;
+}
+#mainBucket{
+    display: flex;
+    flex-direction: row;
+}
+#cleanupInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    max-width: 30%;
+    margin: 1em;
+}
+#teamCaptainInfo{
+    display: flex;
+    flex-direction: column;
+     max-width: 30%;
+    margin-left: 1em;
+}
+#teamMemberAddButton{
+    display:flex;
+    align-items: flex-start;
+}
+#additionalTeamMembers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 30%;
+      margin-left:1em;
+}
+
+#businessForm{
+    display:flex;
+    flex-direction: column;
+}
+
+#infoFromCoordinator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#requestDiv{
+    display: flex;
+    max-width:50%;
+}
+.newTeammateFirstName{
+    margin-top:0.75em;
+    margin-bottom: 0.2em;
+}
+.newTeammateLastName{
+    margin-top:0.2em;
+    margin-bottom: 0.75em;
+}
+.teamMemberContainer{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+}
