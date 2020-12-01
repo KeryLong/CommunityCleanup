@@ -111,6 +111,16 @@ addTeamButton{
     display:flex;
     flex-direction: column;
 }
+
+#infoFromCoordinator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#requestDiv{
+    display: flex;
+    max-width:50%;
+}
 .newTeammateFirstName{
     margin-top:0.75em;
     margin-bottom: 0.2em;
