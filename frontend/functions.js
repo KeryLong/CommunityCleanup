@@ -29,7 +29,7 @@ function loadpage(){
 }
 
 function loadCommunity(){
-        const newcommunityname= document.getElementById('communityNameHeader')  ///get elemnt by id from the signupStat.html//
+        // const newcommunityname= document.getElementById('communityNameHeader')  ///get elemnt by id from the signupStat.html//
         fetch ('http://localhost:3000/communityinfo')
         .then(response => response.json())
         .then (communityinfo =>loadDataOntoPage(communityinfo))
