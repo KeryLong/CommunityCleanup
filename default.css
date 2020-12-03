@@ -442,13 +442,13 @@ p{
     margin-left: 2em;
 }
 input{
-    background-color: #153f2c;
+    background-color: #fafdfc;
     display: flex;
     color:#7af4ab;
 }
 
 textarea{
-    background-color: #153f2c;
+    background-color: #ffffff;
     height:20em;
     width:15em;
     color:#7af4ab;
