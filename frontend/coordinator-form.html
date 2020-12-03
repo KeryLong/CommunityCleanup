@@ -4,9 +4,33 @@
         <title>Coordinator Registration Form</title>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Raleway:wght@400;500;600;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="coordinator-form.css">
+        <link href="default.css" rel="stylesheet">
+        <link href="fonts.css" rel="stylesheet">
+        
         <script src="functions.js"></script> 
     </head>
     <body>
+        <div class="header">
+            <img src="images/Logo.png" alt="logo" />
+            <h1>Community Cleanup</h1>
+          </div>
+          
+        
+		
+		<!-- <div id="logo2"><img src="images/Logo.png" width="80" height="70"/></a></div>
+		<div id="logo">
+			<h1><a href="#">Community Cleanup</a></h1>
+		</div> -->
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="2" title="">Start Cleanup </a></li>
+				<li><a href="#" accesskey="3" title="">Join a Cleanup</a></li>
+				<li><a href="#" accesskey="4" title="">Donate</a></li>
+				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
      <div id = "container"> 
         <form>
             <h1 class="formHead"  >Coordinator Registration Form</h1>
@@ -71,20 +95,20 @@
                 <label for ="coordinatorLastName">Last Name</label>
                 <input type="text" id="coordinatorLastName" >
 
-                <label for ="Email" >Email</label>
-                <input type="email" id="Email"> 
+                <label for ="email" >Email</label>
+                <input type="email" id="email"> 
                 <div id="newField2"></div>
-                <button class="button" type="button" onclick="addFieldFirstname(), addFieldLastname()"> Add Person</button>
+                <button class="addButton" type="button" onclick="addFieldFirstname(), addFieldLastname()"> Add Person</button>
                
             </div>
         </div>
      </fieldset>
     <fieldset>
         <legend >Notes And Requests</legend>
-        <label for ="note"> Note</label>
+        <label for ="note"> Notes to Volunteer</label>
         <textarea placeholder="Type your Notes here" id="note"></textarea>
 
-        <label for ="request"> Requests</label>
+        <label for ="request"> Donation Requests </label>
         <textarea placeholder="Type your Requests here" id="request"></textarea>
         
         <input type="submit" value="Register" onclick="Register()"> 

@@ -2,12 +2,15 @@ body{
   /* background-image: url(17bea15a20896e09d4b72fb86d044f87.jpg);
     background-repeat: no-repeat;
     background-size: 100%; */
+    
+      /* height: 100%; */
+      /* margin: 0px;
+      padding: 0px; */
    background: radial-gradient(circle, rgba(122,244,171,1) 0%, rgba(74,140,103,1) 50%, rgba(78,164,112,1) 100%); 
 }
 
-
 #container{
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     
 }
@@ -18,6 +21,7 @@ body{
 }
 /*--------Form Style----*/
 form{
+  margin-top: 40px;
     border: 2px solid rgb(12, 77, 44); 
     border-radius: 10px;
     width: 100%;
@@ -79,7 +83,7 @@ form input[type=text], form input[type=date], form input[type=time] ,form select
     color:rgb(12, 82, 42) ;
     font-family: Oswald, serif;
   }
-  .button {
+  .addButton {
     background-color: rgb(28, 133, 74);
     color: white;
     /* padding: 15px 32px; */

@@ -15,17 +15,14 @@ const communityInfo = [
     "postcode": "T3G",
     "date":"Jun 1",
     "time":"9 am",
-     },
+    "coordinatorFirstName" : "George",
+    "coordinatorLastName" : "ML",
+    "phoneNumber" : "403-911-8520",
+    "email" : "gml123@gmail.com",
+    "notes" : "be on time",
+    "requests" : "gloves , bags , hats",
+}]
 
-     {"communityName" : "community2",
-    "address": "2020 community SW",
-    "city": "Calgary",
-    "province":"AB",
-    "postcode": "T3G",
-    "date":"Jun 1",
-    "time":"9 am",
-     }
-]
 //PORT
 var server = app.listen (3000,function(){
     var port = server.address().port
@@ -40,13 +37,19 @@ app.post('/communityinfo',function(req,res){
     // console.log('I have a request')
     console.log(req.body)
     let newcommunity = {
-        comunityName:req.body.comunityName,
+        communityName:req.body.communityName,
         address : req.body.address,
         city : req.body.city,
         province : req.body.province,
         postcode : req.body.postcode,
         date : req.body.date,
-        time : req.body.time
+        time : req.body.time,
+        coordinatorFirstName : req.body.coordinatorFirstName,
+        coordinatorLastName : req.body.coordinatorLastName,
+        phoneNumber : req.body.phoneNumber,
+        email : req.body.email,
+        notes : req.body.notes,
+        request : req.body.req
     }
         communityInfo.push(newcommunity)
         res.send(newcommunity)
