@@ -8,8 +8,8 @@ app.use(cors())
 app.use(express.static('.'))
 
 const communityInfo = [
-    {"communityName" : "community1",
-    "address": "1254 community way NW",
+    {"communityName" : "Ranchland",
+    "address": "1254 Ranchlands way NW",
     "city": "Calgary",
     "province":"AB",
     "postcode": "T3G",
