@@ -182,6 +182,13 @@
 		background: #111111 url(images/wide.jpg) no-repeat center;
 		background-size: cover;
 	}
+	#header-wrapper3
+	{
+		position: relative;
+		padding: 0em 0em 0em 0em;
+		
+		
+	}
 
 	#header
 	{
@@ -253,7 +260,7 @@
 		background: #7aee8e;
 		border-radius: 6px;
 		color: rgba(255,255,255,1);
-		color: #3f0900;
+		color: #050404;
 	}
 	
 

@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <link href="default.css" rel="stylesheet">
+  <link href="fonts.css" rel="stylesheet">  
+
+<head>
+  <div id="header-wrapper3">
+    <div id="header" class="container">
+      <div id="logo2"><img src="images/Logo.png" width="128" height="100"/></a></div>
+      <div id="logo">
+        <h1><a href="indexk.html"><span id="communityNameHeader" class="placeholder"> Placeholder</span></a></h1>
+      </div>
+      <div id="menu">
+        <ul>
+          <li class="active"><a href="indexk.html" accesskey="1" title="">Homepage</a></li>
+          <li><a href="volunteerForm.html" accesskey="2" title="">Sign Up</a></li>
+          <li><a href="donorForm.html" accesskey="3" title="">Donate</a></li>
+          <li><a href="coordinator-form.html" accesskey="4" title="">Start a Community</a></li>
+        </ul>
+      </div>
+
 <head>
     <title>Donate to the Community Cleanup</title>
     <script src="script.js"></script>
@@ -16,10 +35,12 @@
         <p><strong>Meeting Point:</strong><span class="placeholder" id="meetingPoint">placeholder</span></p>
       </div>
       <div id ="requestDiv">
-        <p id="donorRequestParagraph">Silky mittens Our goalie really bailed us out tonight. That puck just snuck through. Your best players gotta be your best players. Obviously uhh Obviously uhh
-
-          If you can't beat 'em in the alley, you can't beat 'em on the ice. Skates like the wind. Put some sauce on that pass. Do the little things. Trust the process. It's a tough one.</p>
+        <p id="donorRequestParagraph">Someone in your community is organizing a community cleanup.  Help them by donating to show you care about the community.</p>
       </div>
+    </div>
+    <div id ="requestDiv">
+      <p><strong>Notes:</strong>
+      <p id="donorRequestParagraph">requests from organizer to donor</p>
     </div>
     <div class = "container" id = "mainBucket">
       
@@ -84,11 +105,15 @@
         <div class = "input"><textarea id = "donationDetails" placeholder = "Add what you would like to donate here."></textarea><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
           </svg></div><br>
+          
         
       
         <div class="container additionalDonationDetails" id="addDonationDetailsDiv"></div>
+        
        </div>    
            </div>
         
       </div>
+      <input type="submit" name="submit">
 
+    </body>
