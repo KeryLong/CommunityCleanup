@@ -22,6 +22,15 @@ const communityInfo = [
     "notes" : "be on time",
     "requests" : "gloves , bags , hats",
 }]
+ const volunteerInfo = [
+     {
+        "teamname ": "Clean Community",
+        "captainfirstname ": "Mari",
+        "Captainlastname" : "Bl",
+        "captainphone ":"403-522-9523",
+        "Email ": "mari@yahoo.com"
+     }
+ ]
 
 //PORT
 var server = app.listen (3000,function(){
@@ -34,7 +43,6 @@ app.get('/communityinfo', function(req,res){
 })
 
 app.post('/communityinfo',function(req,res){
-    // console.log('I have a request')
     console.log(req.body)
     let newcommunity = {
         communityName:req.body.communityName,
@@ -49,8 +57,24 @@ app.post('/communityinfo',function(req,res){
         phoneNumber : req.body.phoneNumber,
         email : req.body.email,
         notes : req.body.notes,
-        request : req.body.req
+        request : req.body.requests
     }
         communityInfo.push(newcommunity)
         res.send(newcommunity)
+})
+app.get('/volunteerinfo', function(req,res){
+    res.send(volunteerInfo)
+})
+app.post('/volunteerinfo',function(req,res){
+
+    console.log(req.body)
+    let volunteers = {
+        teamname : req.body.teamName,
+        captainfirstname : req.body.captainFirstName,
+        Captainlastname : req.body.captainLastName,
+        captainphone :req.body.captainPhone,
+        email : req.body.email
+    }
+        communityInfo.push(volunteers)
+        res.send(volunteers)
 })

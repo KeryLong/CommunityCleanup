@@ -5,14 +5,13 @@
 	
 	body
 	{
-		height: 100%;
 		margin: 0px;
 		padding: 0px;
-		background: radial-gradient(circle, rgba(122,244,171,1) 0%, rgba(74,140,103,1) 50%, rgba(78,164,112,1) 100%); 
+		background:rgba(122,244,171,1);
 		font-family: 'Didact Gothic', sans-serif;
 		font-size: 12pt;
 		font-weight: 200;
-		color: #FFF;
+		color: rgb(8, 8, 8);
 	}
 	
 	
@@ -29,6 +28,8 @@
 		margin: 0em auto;
 		width: 1500px;
 	}
+
+
 	
 
 /* Image Style                                                                   */
@@ -124,7 +125,8 @@
 
 	.boxB
 	{
-		margin:auto;
+		float:left;
+		padding: 0em 0em 0em 10em
 
 	}
 	
@@ -173,29 +175,22 @@
 		background: #111111 url(images/hill.jpg) no-repeat center;
 		background-size: cover;
 	}
+	#header-wrapper2
+	{
+		position: relative;
+		padding: 0em 0em 0em 0em;
+		background: #111111 url(images/wide.jpg) no-repeat center;
+		background-size: cover;
+	}
 
 	#header
 	{
 		position: relative;
 		padding: 0em 0em 23em 0em;
 	}
-
-	.header img {
-		float: left;
-		width: 80px;
-		height: 70px;
-	  }
-	  
-	  .header h1 {
-		position: relative;
-		top: 18px;
-		left: 10px;
-		font-size: 2em;
-		color: rgb(6, 100, 18);
-	  }
 /* Logo                                                                          */
-/* 
-	 #logo
+
+	#logo
 	{
 		position: absolute;
 		top: 1em;
@@ -205,10 +200,9 @@
 	#logo h1
 	{
 		font-size: 2.6em;
-		color: rgb(6, 100, 18);
-		margin-bottom: 20px;
-	} 
-
+		color: #79C255;
+	}
+	
 	#logo a
 	{
 		text-decoration: none;
@@ -220,9 +214,7 @@
 		position: left top;
 		top: 1em;
 		left: 0;
-		margin-bottom: 30px;
-		
-	} */
+	}
 
 /* Menu                                                                          */
 
@@ -231,9 +223,9 @@
 		position: absolute;
 		top: 2em;
 		right: 0;
-	} 
+	}
 	
-	#menu ul 
+	#menu ul
 	{
 		display: inline-block;
 	}
@@ -247,22 +239,21 @@
 	
 	#menu li a, #menu li span
 	{
-		padding: 1em;
+		padding: 1em 1.5em;
 		letter-spacing: 1px;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-size: 1.2em;
-		color: rgba(4, 10, 7, 0.8);
+		color: rgba(8, 8, 8, 0.8);
 	}
 	
 	
 	#menu .active a
 	{
-		/* background: #7aee8e; */
+		background: #7aee8e;
 		border-radius: 6px;
 		color: rgba(255,255,255,1);
-		color: rgba(4, 10, 7, 0.8);
-	
+		color: #3f0900;
 	}
 	
 
@@ -310,6 +301,7 @@
 
 	#copyright
 	{
+		display:none;
 		overflow: hidden;
 		padding: 5em 0em;
 		border-top: 1px solid rgba(0,0,0,0.08);
@@ -418,3 +410,148 @@
   .container2 .btn:hover {
 	background-color: rgb(0, 0, 0);
   }
+
+  #cleanupInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    max-width: 30%;
+    margin: 1em;
+}
+h1{
+    display:flex;
+    text-align: center;    
+    font-family: oswald, serif;
+    font-weight: 700;
+    margin:0.7em;
+}
+
+h3{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: Oswald, serif;
+    font-size: 2em;
+    font-weight:500;
+    margin-top: 1.4em;
+    margin-bottom:1em;
+    
+}
+p{
+    font-family: raleway;
+    font-size:1.5em;
+    margin-left: 2em;
+}
+input{
+    background-color: #153f2c;
+    display: flex;
+    color:#7af4ab;
+}
+
+textarea{
+    background-color: #153f2c;
+    height:20em;
+    width:15em;
+    color:#7af4ab;
+    
+}
+::placeholder{
+    color:rgb(78,164,112);
+	opacity: 1;
+	
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color:rgb(78,164,112);
+	
+}
+#mainBucket{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+#addMoreTeamButton{
+    display:flex;
+    align-items: center;
+    height:auto;
+    width:10em;
+    background-color: #153f2c;
+    color: #7af4ab;
+    margin: 1em;
+    margin-top: 63%;
+}
+#addMoreDonationDetailsButton{
+    display:flex;
+    align-items: center;
+    height:auto;
+    width: 10em;    
+    background-color: #153f2c;
+    color: #7af4ab;
+    margin: 1em;
+    margin-top:81%;
+}
+#addTeamButton{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:25%;
+}
+#mainBucket{
+    display: flex;
+    flex-direction: row;
+}
+#cleanupInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em;
+    max-width: 30%;
+    margin: 1em;
+}
+#teamCaptainInfo{
+    display: flex;
+    flex-direction: column;
+     max-width: 30%;
+    margin-left: 1em;
+}
+#teamMemberAddButton{
+    display:flex;
+    align-items: flex-start;
+}
+#additionalTeamMembers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 30%;
+      margin-left:1em;
+}
+
+#businessForm{
+    display:flex;
+    flex-direction: column;
+}
+
+#infoFromCoordinator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#requestDiv{
+    display: flex;
+    max-width:50%;
+}
+.newTeammateFirstName{
+    margin-top:0.75em;
+    margin-bottom: 0.2em;
+}
+.newTeammateLastName{
+    margin-top:0.2em;
+    margin-bottom: 0.75em;
+}
+.teamMemberContainer{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+}

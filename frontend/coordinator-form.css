@@ -4,8 +4,8 @@ body{
     background-size: 100%; */
     
       /* height: 100%; */
-      /* margin: 0px;
-      padding: 0px; */
+      margin: 0px;
+      padding: 0px; 
    background: radial-gradient(circle, rgba(122,244,171,1) 0%, rgba(74,140,103,1) 50%, rgba(78,164,112,1) 100%); 
 }
 
@@ -14,6 +14,57 @@ body{
     margin: 0 auto;
     
 }
+/* Header style */
+.header img {
+  float: left;		
+  width: 80px;
+  height: 70px;
+  top: 1em;
+}
+  
+  .header h1 {
+  left: 0px;
+  position: relative;
+  top: .5px;
+  font-size: 2em;
+  color: rgb(6, 100, 18);
+  }
+
+  #menu
+	{
+		position: absolute;
+		top: 1.5em;
+		right: 0;
+	} 
+	
+	
+	#menu li
+	{
+		display: block;
+		float: left;
+		/* text-align: end; */
+	}
+	
+	#menu li a, #menu li span
+	{
+		padding: .5em;
+		/* letter-spacing: 1px; */
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		color: rgb(6, 100, 18);
+	}
+	
+	
+	#menu .active a
+	{
+		/* background: #7aee8e; */
+		border-radius: 6px;
+		color: rgb(6, 100, 18);
+	
+	}
+	
+/* forms style*/
 .formHead{
     text-align: center;
     font-family: Oswald, serif;
@@ -21,7 +72,7 @@ body{
 }
 /*--------Form Style----*/
 form{
-  margin-top: 40px;
+  margin-top: 20px;
     border: 2px solid rgb(12, 77, 44); 
     border-radius: 10px;
     width: 100%;

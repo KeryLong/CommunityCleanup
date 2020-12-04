@@ -137,3 +137,23 @@ addTeamButton{
     display: flex;
     flex-direction: row;
 }
+input[type=submit] {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    height:auto;
+    width:10em;
+    background-color: #153f2c;
+    color: #7af4ab;
+    margin: 1em;
+    margin-top: 63%;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: medium;
+    margin-right: 20px;
+    /* border: 2px solid rgb(11, 87, 45); */
+    /* border-radius: 7px; */
+    /* padding: 10px; */
+    /* box-shadow: inset 0 20px 4px -19px rgba(202, 179, 179, 0.7); */
+    
+  }
