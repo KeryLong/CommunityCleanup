@@ -6,7 +6,7 @@ function addTeamMembers() {
   
   Name.setAttribute('type', 'text');
   Name.setAttribute('placeholder', 'Name');
-  Name.setAttribute('class', 'newTeammateName');
+  Name.setAttribute('id', 'newTeammateName');
   appendDiv.appendChild(Name);
   
 }

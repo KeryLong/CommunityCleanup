@@ -10,9 +10,8 @@
     <script src="volunteerfunctions.js"></script> 
 
 </head>
-  <body onload = 'loadpage()'>
-   
-    <h1>Volunter for the <pre>  </pre> <span id="communityNameHeader" class="placeholder">Placeholder </span> <pre>  </pre>Community Cleanup Day</h1>  
+<body onload = 'loadpage()'>
+  <h1>Volunter for the  <span class="communityNameHeader" class="placeholder"> Placeholder </span> Community Cleanup Day</h1>  
 
     <div id = "infoFromCoordinator">
       <div id="cleanupInfo" >
@@ -46,20 +45,20 @@
                     <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
                   </svg></div><br>
 
-                  <label for ="CaptainLastName">Last Name:
-                    <div class = "input"><input type="text" placeholder="Last Name" id="CaptainLastName" name="CaptainLastName" required>
+                  <label for ="teamCaptainLastName">Last Name:
+                    <div class = "input"><input type="text" placeholder="Last Name" id="teamCaptainLastName" name="teamCaptainLastName" required>
                     </label><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
                       </svg></div><br>       
           
-            <label for="captainPhone"> Phone:
-                <div class="input"><input type="tel" id="captainPhone" placeholder="012-345-6789" name="captainPhone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}[0-9]{4}">
+            <label for="teamCaptainPhone"> Phone:
+                <div class="input"><input type="tel" id="teamCaptainPhone" placeholder="012-345-6789" name="teamCaptainPhone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}[0-9]{4}">
             </label><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
               </svg>
             </div><br>                
-              <label for="captainEmail"> Email:
-                <div class = "input"><input  type="email" id="phone" placeholder="Email Address" name="captainEmail" >
+              <label for="teamCaptainEmail"> Email:
+                <div class = "input"><input  type="email" id="teamCaptainEmail" placeholder="Email Address" name="teamCaptainEmail" >
             </label><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
               </svg></div><br> 
@@ -69,14 +68,15 @@
             <button id="addMoreTeamButton" onclick="addTeamMembers()">Add a Team Member <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
               </svg></button> 
-              <input type="submit" value="Register" onclick="volunteeRegister()">   
-        
+              <input type="submit" value="Register" onclick="volunteeRegister()">  
         </div>
+         
 
         <div class="teamMemberContainer">
         <h3 id="teamMembers">Team Members</h3>
         <div class="container additionalTeamMembers" id="addTeamMemberDiv"></div>
        </div>    
-       
+           
+        
       </div>
 

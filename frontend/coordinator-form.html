@@ -7,24 +7,20 @@
         <script src="functions.js"></script> 
     </head>
     <body>
-        <div class="header">
-            <img src="images/Logo.png" alt="logo" />
-            <h1>Community Cleanup</h1>
-          </div>
-		<!-- <div id="logo2"><img src="images/Logo.png" width="80" height="70"/></a></div>
+
+    <div id="header" class="container">
+		<div id="logo2"><img src="images/Logo.png" width="128" height="100"/></a></div>
 		<div id="logo">
-			<h1><a href="#">Community Cleanup</a></h1>
-		</div> -->
+			<h1>Community Cleanup</h1>
+		</div>
 		<div id="menu">
 			<ul>
-				<li class="active"><a href="http://127.0.0.1:5501/frontend/index.html" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="2" title="">Start Cleanup </a></li>
-				<li><a href="#" accesskey="3" title="">Join a Cleanup</a></li>
-				<li><a href="#" accesskey="4" title="">Donate</a></li>
-				<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+				<li class="active"><a href="main.html" accesskey="1" title="">Homepage</a></li>
+				<li><a href="volunteerForm.html" accesskey="2" title="">Sign Up</a></li>
+				<li><a href="donorForm.html" accesskey="3" title="">Donate</a></li>
+				<li><a href="coordinator-form.html" accesskey="4" title="">Start a Community</a></li>
 			</ul>
 		</div>
-	</div>
      <div id = "container"> 
         <form>
             <h1 class="formHead"  >Coordinator Registration Form</h1>
@@ -82,6 +78,7 @@
 
                     <label for ="phoneNumber" >Phone Number</label>
                     <input type="phone" id="phoneNumber">
+
                     <div id="newField1"></div>
                 </div>
             
@@ -91,8 +88,9 @@
 
                 <label for ="email" >Email</label>
                 <input type="email" id="email"> 
+
                 <div id="newField2"></div>
-                <button class="addButton" type="button" onclick="addFieldFirstname(), addFieldLastname()"> Add Person</button>
+                <button class="addButton" type="button" onclick="addCoordinator()"> Add another Coordinator</button>
                
             </div>
         </div>

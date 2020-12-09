@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <link href="default.css" rel="stylesheet">
+  <link href="fonts.css" rel="stylesheet">  
+
+<head>
+  <div id="header-wrapper3">
+    <div id="header" class="container">
+      <div id="logo2"><img src="images/Logo.png" width="128" height="100"/></a></div>
+      <div id="logo">
+        <h1><a href="indexk.html"><span class="communityNameHeader" class="placeholder"> Placeholder</span></a></h1>
+      </div>
+      <div id="menu">
+        <ul>
+          <li class="active"><a href="indexk.html" accesskey="1" title="">Homepage</a></li>
+          <li><a href="volunteerForm.html" accesskey="2" title="">Sign Up</a></li>
+          <li><a href="donorForm.html" accesskey="3" title="">Donate</a></li>
+          <li><a href="coordinator-form.html" accesskey="4" title="">Start a Community</a></li>
+        </ul>
+      </div>
+
 <head>
     <title>Donate to the Community Cleanup</title>
     <script src="script.js"></script>
@@ -7,11 +26,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="functions.js"></script> 
+    <script src="donorfunctions.js"></script> 
 </head>
 <body onload = 'loadpage()'>
- 
-
-    <h1>Donate to the <pre>  </pre> <span id="communityNameHeader" class="placeholder"> Placeholder </span> <pre>  </pre>Community Cleanup Day</h1>  
+    <h1>Donate to the  <span class="communityNameHeader" class="placeholder"> Placeholder </span> Community Cleanup Day</h1>  
     <div id = "infoFromCoordinator">
     <div id="cleanupInfo" >
         <p><strong>Date:</strong><span class="placeholder" id="date">placeholder</span></p>
@@ -19,29 +37,32 @@
         <p><strong>Meeting Point:</strong><span class="placeholder" id="meetingPoint">placeholder</span></p>
       </div>
       <div id ="requestDiv">
-        <p id="donorRequestParagraph">Silky mittens Our goalie really bailed us out tonight. That puck just snuck through. Your best players gotta be your best players. Obviously uhh Obviously uhh
-
-          If you can't beat 'em in the alley, you can't beat 'em on the ice. Skates like the wind. Put some sauce on that pass. Do the little things. Trust the process. It's a tough one.</p>
+        <p id="donorRequestParagraph">Someone in your community is organizing a community cleanup.  Help them by donating to show you care about the community.</p>
       </div>
+    </div>
+    <div id ="requestDiv">
+      <p><strong>Notes:</strong>
+      <p id="donorRequestParagraph">requests from organizer to donor</p>
     </div>
     <div class = "container" id = "mainBucket">
       
+
         <div id="businessForm">
             <h3>Business<br> Information</h3>
-            <label for ="businessName">Business Name:
-                <div class = "input"><input type="text" placeholder="Business Name" id="businessName" name="businessName" class = "businessContact" required>
+            <label for ="teamName">Business Name:
+                <div class = "input"><input type="text" placeholder="Business Name" id="teamName" name="teamName" required>
             </label><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
           </svg></div><br>
             
             <label for ="businessAddress">Business Address:
-                <div class = "input"><input type="text" placeholder="Business Address" id="businessAddress" name="businessAddress" class = "businessContact" required>
+                <div class = "input"><input type="text" placeholder="Business Address" id="businessAddress" name="businessAddress" required>
             </label><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
               </svg></div><br>
 
             <label for ="businessAddress">Business Phone:
-                <div class = "input"><input type="text" placeholder="Business Phone" id="businessPhone" name="businessPhone" class = "businessContact" required>
+                <div class = "input"><input type="text" placeholder="Business Phone" id="businessPhone" name="businessPhone" required>
             </label><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
               </svg></div><br>
@@ -78,6 +99,8 @@
             <button id="addMoreDonationDetailsButton" onclick="addDonationDetails()">Add More Details <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-file-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM8.5 6a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V10a.5.5 0 0 0 1 0V8.5H10a.5.5 0 0 0 0-1H8.5V6z"/>
               </svg></button> 
+             
+              <input type="submit" value="Donate" onclick="donate()">
         </div> 
         
 
@@ -86,11 +109,12 @@
         <div class = "input"><textarea id = "donationDetails" placeholder = "Add what you would like to donate here."></textarea><svg width="0.75em" height="0.75em" viewBox="0 0 16 16" class="bi bi-asterisk" fill="red" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
           </svg></div><br>
-        
-      
+          
         <div class="container additionalDonationDetails" id="addDonationDetailsDiv"></div>
+        
        </div>    
            </div>
         
       </div>
 
+    </body>

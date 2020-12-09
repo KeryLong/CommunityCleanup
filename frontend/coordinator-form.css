@@ -15,7 +15,83 @@ body{
     
 }
 /* Header style */
-.header img {
+
+#header
+{
+  position: relative;
+  padding: 0em 0em 23em 0em;
+}
+/* Logo                                                                          */
+
+#logo
+{
+  position: absolute;
+  top: 1em;
+  left: 10em;
+}
+
+#logo h1
+{
+  font-size: 2.6em;
+  color: rgb(6, 100, 18);
+}
+
+#logo a
+{
+  text-decoration: none;
+  color: rgb(6, 100, 18);
+}
+
+#logo2
+{
+  position: left top;
+  top: 1em;
+  left: 0;
+}
+
+/* Menu                                                                          */
+
+#menu
+{
+  position: absolute;
+  top: 2em;
+  right: 0;
+}
+
+#menu ul
+{
+  display: inline-block;
+}
+
+#menu li
+{
+  display: block;
+  float: left;
+  text-align: center;
+}
+
+#menu li a, #menu li span
+{
+  padding: 1em 1.5em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: rgba(8, 8, 8, 0.8);
+}
+
+
+#menu .active a
+{
+  background: #7aee8e;
+  border-radius: 6px;
+  color: rgba(255,255,255,1);
+  color: #050404;
+}
+
+
+  
+/* .header img {
   float: left;		
   width: 80px;
   height: 70px;
@@ -43,13 +119,13 @@ body{
 		display: block;
 		float: left;
 		/* text-align: end; */
-	}
+	/* }
 	
 	#menu li a, #menu li span
 	{
 		padding: .5em;
 		/* letter-spacing: 1px; */
-		text-decoration: none;
+		/* text-decoration: none;
 		text-transform: uppercase;
 		font-size: 1.2em;
 		color: rgb(6, 100, 18);
@@ -58,12 +134,12 @@ body{
 	
 	#menu .active a
 	{
-		/* background: #7aee8e; */
-		border-radius: 6px;
+		/* /* background: #7aee8e;  */
+		/* border-radius: 6px;
 		color: rgb(6, 100, 18);
 	
-	}
-	
+	}  
+	 */
 /* forms style*/
 .formHead{
     text-align: center;
@@ -145,7 +221,7 @@ form input[type=text], form input[type=date], form input[type=time] ,form select
     font-size: 16px;
     height: 40;
     width: 20;
-    margin-left: 200px;
+    margin-left: 100px;
     border: 2px solid rgb(11, 87, 45);
     border-radius: 7px;
     padding: 10px;
